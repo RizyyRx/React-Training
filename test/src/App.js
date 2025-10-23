@@ -6,6 +6,9 @@ import Login from './Login';
 import Product from './Product';
 import MoveOn from './MoveOn';
 import UserProfile from './UserProfile';
+import Photos from './Photos';
+import FPhotos from './Fphotos';
+import Flowers from './Flowers';
 // 
 function App() {
   return (
@@ -19,7 +22,10 @@ function App() {
       {/* <Login name="Jon"></Login> */}
       {/* <Product></Product> */}
       {/* <MoveOn userRole={"admin"}/> */}
-      <UserProfile/>
+      {/* <UserProfile/> */}
+      {/* <Photos/> */}
+      {/* <FPhotos/> */}
+      <Flowers/>
     </div>
   );
 }
