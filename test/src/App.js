@@ -3,6 +3,8 @@ import './App.css';
 import SearchBar from './SearchBar';
 import LabelComponent from './LabelComponent';
 import Login from './Login';
+import Product from './Product';
+import MoveOn from './MoveOn';
 // 
 function App() {
   return (
@@ -13,7 +15,9 @@ function App() {
       {/* <SearchBar></SearchBar>
       <ButtonComponent></ButtonComponent>
       <LabelComponent></LabelComponent> */}
-      <Login name="Jon"></Login>
+      {/* <Login name="Jon"></Login> */}
+      {/* <Product></Product> */}
+      <MoveOn userRole={"admin"}/>
     </div>
   );
 }
