@@ -16,16 +16,16 @@ function App() {
       {/* <h1>Restohub - We Serve Better</h1> */}
       {/* <Home moviename="IronMan" actorname="RDJ"></Home>
       <Home>I am content without attribute</Home> */}
-      {/* <SearchBar></SearchBar>
+      {/* <SearchBar></SearchBar> */}
       <ButtonComponent></ButtonComponent>
-      <LabelComponent></LabelComponent> */}
+      <LabelComponent></LabelComponent>
       {/* <Login name="Jon"></Login> */}
       {/* <Product></Product> */}
       {/* <MoveOn userRole={"admin"}/> */}
       {/* <UserProfile/> */}
       {/* <Photos/> */}
       {/* <FPhotos/> */}
-      <Flowers/>
+      {/* <Flowers/> */}
     </div>
   );
 }

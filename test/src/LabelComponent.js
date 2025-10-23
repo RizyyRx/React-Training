@@ -1,31 +1,24 @@
 import React, { Component } from 'react'
+import HocComponent from './HocComponent' //import HocComponent
 
 export class LabelComponent extends Component {
 
-    constructor(){
-        super()
-        this.state={
-            count:0
-        }
+    constructor(props){ // add props to receive data from Hoc
+        super(props)
     }
 
-    incrementCount(){
-        this.setState({
-            count:this.state.count+1
-        })
-    }
-
+  //Here, access count var and inc count method using the reference names used in Hoc
   render() {
     return (
       <div>
         <h1>LabelComponent</h1>
-        <h4>Count Value:{this.state.count}</h4>
+        <h4>Count Value:{this.props.variablecount}</h4>
 
-        <label onMouseOver={()=>this.incrementCount()}>Hover to increment</label>
+        <label onMouseOver={this.props.methodcount}>Hover to increment</label>
       </div>
       
     )
   }
 }
 
-export default LabelComponent
+export default  HocComponent(LabelComponent) //call through HocComponent

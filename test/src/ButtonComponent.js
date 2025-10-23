@@ -1,30 +1,22 @@
 import React, { Component } from 'react'
+import HocComponent from './HocComponent'
 
 export class ButtonComponent extends Component {
 
-    constructor(){
-        super()
-        this.state={
-            count:0
-        }
-    }
-
-    incrementCount(){
-        this.setState({
-            count:this.state.count+1
-        })
+    constructor(props){
+        super(props)
     }
 
   render() {
     return (
       <div>
         <h1>ButtonComponent</h1>
-        <h4>Count Value:{this.state.count}</h4>
+        <h4>Count Value:{this.props.variablecount}</h4>
 
-        <button onClick={()=>this.incrementCount()}>click to increase count</button>
+        <button onClick={this.props.methodcount}>click to increase count</button>
       </div>
     )
   }
 }
 
-export default ButtonComponent
+export default  HocComponent(ButtonComponent)
