@@ -5,6 +5,7 @@ import LabelComponent from './LabelComponent';
 import Login from './Login';
 import Product from './Product';
 import MoveOn from './MoveOn';
+import UserProfile from './UserProfile';
 // 
 function App() {
   return (
@@ -17,7 +18,8 @@ function App() {
       <LabelComponent></LabelComponent> */}
       {/* <Login name="Jon"></Login> */}
       {/* <Product></Product> */}
-      <MoveOn userRole={"admin"}/>
+      {/* <MoveOn userRole={"admin"}/> */}
+      <UserProfile/>
     </div>
   );
 }
