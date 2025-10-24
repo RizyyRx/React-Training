@@ -1,5 +1,6 @@
 import axios from 'axios';
 import React, { Component } from 'react'
+import { Link, Outlet } from 'react-router-dom';
  
 export class UserProfile extends Component {
     constructor(){
@@ -10,9 +11,7 @@ export class UserProfile extends Component {
         }
     }
     fetchUsers(){
-        axios.get("http://localhost:8080/api/admin/get-users",{
-            headers:{Authorization:`Bearer ${this.state.token}`}
-        })
+        axios.get("http://localhost:3500/users")
         .then(response=>{
             this.setState({user:response.data})
         })
@@ -104,10 +103,10 @@ export class UserProfile extends Component {
       const userInfor=this.state.user.map(u=>{
           return(
           <ul>
-           <li>{u.userId}</li>
-          <li>{u.username}</li>
+           <li>{u.id}</li>
+          <Link to={`/user/${u.id}`}><li>{u.username}</li></Link>
+          <li>{u.name}</li>
           <li>{u.email}</li>
-          <li>{u.createdAt}</li>
           </ul>)
       })
     return (
@@ -118,6 +117,7 @@ export class UserProfile extends Component {
           <button onClick={()=>this.putUser()}>put User </button>
           <button onClick={()=>this.patchUser()}>patch User </button>
           <button onClick={()=>this.deleteUser()}>delete User </button>
+          <Outlet/>
  
       </div>
     )

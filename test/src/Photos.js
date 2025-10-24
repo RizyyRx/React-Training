@@ -7,7 +7,7 @@ export class Photos extends Component {
         this.state={photos:[]}
     }
      componentDidMount(){
-        axios.get("http://localhost:3500/photos")
+        axios.get("http://localhost:3501/photos")
         .then(response=>this.setState({photos:response.data}))
         .catch(err=>alert("error in loading the photos"))
     }
