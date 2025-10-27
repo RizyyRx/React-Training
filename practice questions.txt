@@ -1,0 +1,36 @@
+React Practice Questions - Real-time Scenarios (Restaurant, Travel, Library)
+---------------------------------------------------------------------
+ 
+1. Restaurant App – Create a functional component MenuList that displays a list of dishes using props. Each dish should show its name and price.
+2. Travel Planner – Create a class component TripCard that receives trip details (destination, date, cost) via props and displays them. Add a button to toggle between showing and hiding trip details using state.
+3. Library Management – Build a component that takes an array of books as props and displays them in a styled list using JSX.
+ 
+4. Convert a plain JavaScript list of destinations into JSX and display them using the map() function. Use inline styling for the text color.
+5. Use ES6 destructuring to extract title and author from a book object and display them inside a JSX component.
+6. Create a styled restaurant header using JSX attributes and inline CSS (e.g., background color, font size).
+ 
+7. Create a button in a restaurant order form that shows a message “Order Placed!” only when clicked (use event handler and state).
+8. In a travel booking app, display “Seats Available” only if seats > 0 using logical && operator.
+9. In a library dashboard, show “Renew Membership” if the user’s membership is expired, using the ternary operator in JSX.
+10. Prevent a component from rendering when the user has not selected any destination (conditional rendering with return null).
+ 
+11. Restaurant Feedback Form – Create a controlled form with input fields for name, rating, and comments. Display the entered details below the form after submission.
+12. Travel Form – Create a form with a controlled select dropdown for choosing travel type (Flight, Train, Bus) and a textarea for notes.
+13. Library Member Form – Implement an uncontrolled input (using useRef) to capture a library member’s ID and display it when a button is clicked.
+ 
+14. Restaurant Orders – Display a list of ordered items using map() with proper key attributes. Show an error message if no items are ordered.
+15. Travel Packages – Extract unique destinations from an array of packages and display them with keys.
+ 
+16. Travel App – Fetch travel destinations from a public API (like JSONPlaceholder) using fetch() and display them in a list.
+17. Library App – Use Axios to fetch and display a list of available books from a mock API endpoint. Show a loading message while data is being fetched.
+18. Restaurant Menu – Create a reusable useEffect that fetches menu items using Axios. Handle both success and error responses with proper messages.
+ 
+19. Travel Portal – Implement a router with three routes: /home, /destinations, /contact. Each route should render a different functional component.
+20. Library Navigation – Create nested routing for /books (list view) and /books/:id (detail view) using React Router.
+ 
+---------------------------------------------------------------------
+Notes:
+- Each question should be implemented as a separate component or mini React app.
+- Use App.js to test each implementation.
+- Encourage both functional and class-based approaches.
+- Focus on JSX syntax, props passing, and state management.

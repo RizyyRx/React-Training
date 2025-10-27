@@ -14,6 +14,10 @@ import PageNotFound from './PageNotFound';
 import SignIn from './SignIn';
 import PrivateRoute from './PrivateRoute';
 import { lazy, Suspense } from 'react';
+import UnCClass from './UnCClass';
+import UnCFunctional from './UnCFunctional';
+import Feedback from './Feedback';
+import CoursePage from './CoursePage';
 
 const Home=lazy(()=>import("./Home"));
 const Product=lazy(()=>import("./Product"));
@@ -24,7 +28,7 @@ const UserProfile=lazy(()=>import("./UserProfile"));
 function App() {
   return (
     <div>
-      <BrowserRouter>
+      {/* <BrowserRouter>
       <Nav/>
       <Suspense fallback={<div style={{textAlign:"center"}}>Loading....</div>}/>
       <Routes>
@@ -38,7 +42,11 @@ function App() {
         <Route path='*' element={<PageNotFound/>}/>
         
       </Routes>
-      </BrowserRouter>
+      </BrowserRouter> */}
+      {/* <UnCClass/> */}
+      {/* <UnCFunctional/>
+      <Feedback/> */}
+      <CoursePage/>
     </div>
   );
 }
