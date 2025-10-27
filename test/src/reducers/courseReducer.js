@@ -1,7 +1,9 @@
 export default function courseReducer(state=[],action){
     switch(action.type){
+        case 'SET_COURSE_TITLE':
+            return {...state,course:{title:action.payload}};
         case 'ADD_COURSE':
-            return [...state,Object.assign({},action.course)]; // ... is spread operator. (it means, create a new array with all existing courses, plus one new element at the end.)
+            return {...state,courses:[...state.courses,state.course],course:{title:""}};
         default:
             return state;
     }
